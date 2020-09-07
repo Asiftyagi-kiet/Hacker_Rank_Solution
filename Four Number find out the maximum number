@@ -1,0 +1,20 @@
+#include<stdio.h>
+
+/*four number find out the maximum numbers*/
+
+int maximum(int p, int q, int r, int s)
+{
+  int max;
+  max = p>q?p:q;
+  max = r>max?r:max;
+  max = s>max?s:max;
+  return max;
+}
+  int main(){
+  int p, q, r, s;
+  scanf("%d %d %d %d",&p, &q, &r, &s);
+  int a = maximum(p, q, r, s);
+  printf("%d", a);
+  return 0;
+  
+  }
